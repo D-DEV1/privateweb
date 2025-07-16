@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white shadow-md">
+      <div className="">
         <nav className="p-4 flex justify-between items-center">
           {/* SVG Logo */}
           <svg
