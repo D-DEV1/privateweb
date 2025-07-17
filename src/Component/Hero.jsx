@@ -31,13 +31,7 @@ const Hero = () => {
             </div>
         </div>
     </div>
-    <div class="bg-white">
-        <div class="relative mx-auto mt-4 md:mt-8">
-            <div class="lg:max-w-4xl lg:mx-auto">
-                <img class="px-4 md:mpx-8" src="#" />
-            </div>
-        </div>
-    </div>
+   
 </section>
     </div>
       
