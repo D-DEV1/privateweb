@@ -22,7 +22,7 @@ const About = () => {
   {/* Left: Profile & Tech */}
   <div className={`transition-all duration-700 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
     <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-40"></div>
+      
       <h3 className="text-2xl font-bold text-gray-800 mb-4">Frontend Developer</h3>
       <p className="text-gray-600 mb-6">
         A year building responsive, user-friendly apps with modern frameworks. Passionate about clean code and performance.
