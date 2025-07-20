@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Code, Palette, Zap } from 'lucide-react';
+import { Code, Palette, Zap, Github, Mail, Linkedin } from 'lucide-react';
 
 const About = () => {
   const [visible, setVisible] = useState(false);
@@ -35,7 +35,7 @@ const About = () => {
     </div>
   </div>
 
-  {/* Right: Features */}
+  
   <div className={`space-y-6 transition-all duration-700 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
     {[
       { icon: Code, title: 'Clean Code', desc: 'Maintainable, scalable code with best practices.' },
@@ -54,8 +54,35 @@ const About = () => {
     ))}
   </div>
 </div>
+ <div className="flex justify-center space-x-6 mt-10">
+     <a
+       href="https://github.com/yourusername"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="GitHub"
+       className="hover:scale-110 transition-transform"
+     >
+       <Github size={40} color="black" /> 
+     </a>
+     <a
+       href="mailto:your@email.com"
+       aria-label="Mail"
+       className="hover:scale-110 transition-transform"
+     >
+       <Mail size={40} color="red" /> 
+     </a>
+     <a
+       href="https://linkedin.com/in/yourusername"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="LinkedIn"
+       className="hover:scale-110 transition-transform"
+     >
+       <Linkedin size={40} color="#2563eb" />
+     </a>
    </div>
-
+   </div>
+  
    
    </>
    
