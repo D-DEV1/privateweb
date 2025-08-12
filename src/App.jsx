@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Component/Navbar'
 import Hero from './Component/Hero'
 import About from './Component/About'
+import Skills from './Component/Skills'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
     </>
   )
 }
