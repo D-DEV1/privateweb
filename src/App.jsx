@@ -4,6 +4,8 @@ import Hero from './Component/Hero'
 import About from './Component/About'
 import Skills from './Component/Skills'
 import Project from './Component/Project'
+import Contact from './Component/Contact'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <About />
       <Skills />
       <Project />
+      <Contact />
+      <Footer />
     </>
   )
 }

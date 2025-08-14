@@ -56,7 +56,7 @@ const About = () => {
 </div>
  <div className="flex justify-center space-x-6 mt-10">
      <a
-       href="https://github.com/yourusername"
+       href="https://github.com/D-DEV1"
        target="_blank"
        rel="noopener noreferrer"
        aria-label="GitHub"
@@ -65,14 +65,14 @@ const About = () => {
        <Github size={40} color="black" /> 
      </a>
      <a
-       href="mailto:your@email.com"
+       href="mailto:Bolumayowa4@email.com"
        aria-label="Mail"
        className="hover:scale-110 transition-transform"
      >
        <Mail size={40} color="red" /> 
      </a>
      <a
-       href="https://linkedin.com/in/yourusername"
+       href="https://www.linkedin.com/in/bolu-mayowa-25612926a/"
        target="_blank"
        rel="noopener noreferrer"
        aria-label="LinkedIn"
