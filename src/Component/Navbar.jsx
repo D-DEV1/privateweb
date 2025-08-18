@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="">
         <nav className="p-4 flex justify-between items-center">
-          {/* SVG Logo */}
+       
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="100px"
@@ -33,7 +33,7 @@ const Navbar = () => {
               D-DEV
             </text>
           </svg>
-          {/* Hamburger Icon for Mobile */}
+          
           <button
             className="md:hidden text-black focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -43,7 +43,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          {/* Menu Links */}
+          
           <ul className={`flex-col md:flex-row md:flex space-y-0 mr-2 font-medium md:space-y-0 md:space-x-4 absolute md:static bg-white md:bg-transparent left-0 w-full md:w-auto px-4 md:px-0 transition-all duration-200 ease-in ${menuOpen ? 'flex top-16' : 'hidden md:flex'}`}>
             <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">About</a></li>
             <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">Skills</a></li>

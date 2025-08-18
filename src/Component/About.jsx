@@ -5,7 +5,7 @@ const About = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after mount
+   
     setTimeout(() => setVisible(true), 200);
   }, []);
 
@@ -19,7 +19,7 @@ const About = () => {
     </div>
 
 <div className="grid md:grid-cols-2 gap-12 items-center">
-  {/* Left: Profile & Tech */}
+ 
   <div className={`transition-all duration-700 ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
     <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 relative overflow-hidden">
       
