@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <div className="">
+      <div className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur shadow-md' : 'bg-transparent'}`}>
         <nav className="p-4 flex justify-between items-center">
        
           <svg
@@ -45,10 +55,10 @@ const Navbar = () => {
           </button>
           
           <ul className={`flex-col md:flex-row md:flex space-y-0 mr-2 font-medium md:space-y-0 md:space-x-4 absolute md:static bg-white md:bg-transparent left-0 w-full md:w-auto px-4 md:px-0 transition-all duration-200 ease-in ${menuOpen ? 'flex top-16' : 'hidden md:flex'}`}>
-            <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">About</a></li>
-            <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">Skills</a></li>
-            <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">Projects</a></li>
-            <li><a href="#" className="text-black hover:text-gray-400 block py-2 md:py-0">Contact</a></li>
+            <li><a href="#about" className="text-black hover:text-gray-400 block py-2 md:py-0">About</a></li>
+            <li><a href="#skills" className="text-black hover:text-gray-400 block py-2 md:py-0">Skills</a></li>
+            <li><a href="#projects" className="text-black hover:text-gray-400 block py-2 md:py-0">Projects</a></li>
+            <li><a href="#contact" className="text-black hover:text-gray-400 block py-2 md:py-0">Contact</a></li>
           </ul>
         </nav>
       </div>

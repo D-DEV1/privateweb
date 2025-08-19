@@ -11,6 +11,7 @@ const About = () => {
 
   return (
    <>
+   <section id="about">
    <div className="max-w-4xl mx-auto px-4 py-24 mb-6">
     <div>
         <h1 className='flex justify-center text-3xl font-bold '>About me</h1>
@@ -83,7 +84,7 @@ const About = () => {
    </div>
    </div>
   
-   
+   </section>
    </>
    
   );

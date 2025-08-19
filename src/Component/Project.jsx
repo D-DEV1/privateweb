@@ -39,7 +39,7 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="py-12 px-4 bg-gray-50">
+    <section className="py-12 px-4 bg-gray-50" id='projects'>
       <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {projects.map((project, idx) => (

@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
 
 const Footer = () => {
   return (
+    <section id='footer'>
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -58,6 +59,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </section>
   )
 }
 
