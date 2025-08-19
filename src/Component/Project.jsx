@@ -2,28 +2,28 @@ import React, { useEffect, useState } from 'react';
 
 const projects = [
   {
-    image: './public/images/devp3.png',
+    image: '/images/devp3.png',
     title: 'My portfolio website',
     desc: 'My personal portfolio showcasing my work and skills.',
     tech: ['React', 'Tailwind'],
     github: 'https://github.com/D-DEV1/privateweb.git',
   },
   {
-    image: './public/images/devp.png',
+    image: '/images/devp.png',
     title: 'simple landing page',
     desc: 'A simple landing page with login functionality.',
     tech: ['HTML', 'Tailwind', 'JavaScript'],
     github: 'https://github.com/D-DEV1/project01',
   },
   {
-    image: './public/images/devp2.png',
+    image: '/images/devp2.png',
     title: 'My first project',
     desc: 'A cool project built with html and css.',
     tech: [ 'Html', 'css'],
     github: 'https://github.com/D-DEV1/Devp',
   },
   {
-    image: './public/images/dev4.png',
+    image: '/images/dev4.png',
     title: 'A clone of a popular website',
     desc: 'Yet another project with a neat stack.',
     tech: ['Tailwind', 'JavaScript', 'Tailwind'],
