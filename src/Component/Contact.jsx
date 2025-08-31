@@ -1,25 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 
+
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    console.log("Form submitted:", formData);
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -73,7 +56,7 @@ const Contact = () => {
               <p className="text-gray-500 mb-6">
                 I'll get back to you as soon as possible.
               </p>
-              <form onSubmit={handleSubmit}>
+              <form action="https://formspree.io/f/mvgbryop" method="POST">
                 <div className="grid grid-cols-1 gap-4">
                   <div>
                     <label
@@ -89,8 +72,7 @@ const Contact = () => {
                       required
                       className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:outline-none"
                       placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
+                    
                     />
                   </div>
                   <div>
@@ -107,8 +89,7 @@ const Contact = () => {
                       required
                       className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:outline-none"
                       placeholder="you@email.com"
-                      value={formData.email}
-                      onChange={handleChange}
+                    
                     />
                   </div>
                   <div>
@@ -125,8 +106,7 @@ const Contact = () => {
                       required
                       className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:outline-none"
                       placeholder="Your Message"
-                      value={formData.message}
-                      onChange={handleChange}
+                    
                     ></textarea>
                   </div>
                 </div>
