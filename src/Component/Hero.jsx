@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -20,14 +21,14 @@ const Hero = () => {
             and bringing designs to life with clean, maintainable code.
             </h1>
             <div className="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-                <a href="#" title=""
+                <a href="#projects"
                     className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                     role="button">
                     Projects
                 </a>
-                <a href="/resume"
+                <Link to="/resume"
                     className="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-gray-900 hover:text-white transition-all duration-200 bg-gray-100 border-2 border-gray-900 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    role="button">My Resume</a>
+                    role="button">My Resume</Link>
             </div>
         </div>
     </div>
