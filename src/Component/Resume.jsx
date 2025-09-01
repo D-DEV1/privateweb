@@ -21,7 +21,7 @@ const Resume = () => {
       
     </div>
 
-      <Link to="/home" className="flex items-center text-blue-600 hover:text-blue-800 font-semibold text-lg mb-4 transition-colors">
+      <Link to="/" className="flex items-center text-blue-600 hover:text-blue-800 font-semibold text-lg mb-4 transition-colors">
         <svg className="h-5 w-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>

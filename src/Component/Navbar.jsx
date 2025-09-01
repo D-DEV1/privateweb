@@ -19,8 +19,8 @@ const Navbar = () => {
     <>
       <div className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur shadow-md' : 'bg-transparent'}`}>
         <nav className="p-4 flex justify-between items-center">
-
-          <Link to="/home" className="flex items-center">
+       
+          <Link to="/" className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100px"
@@ -59,7 +59,7 @@ const Navbar = () => {
           </button>
           
           <ul className={`flex-col md:flex-row md:flex space-y-0 mr-2 font-medium md:space-y-0 md:space-x-4 absolute md:static bg-white md:bg-transparent left-0 w-full md:w-auto px-4 md:px-0 transition-all duration-200 ease-in ${menuOpen ? 'flex top-16' : 'hidden md:flex'}`}>
-            <li><Link to="/home" className="text-black hover:text-gray-400 block py-2 md:py-0">Home</Link></li>
+            <li><Link to="/" className="text-black hover:text-gray-400 block py-2 md:py-0">Home</Link></li>
             <li><a href="#about" className="text-black hover:text-gray-400 block py-2 md:py-0">About</a></li>
             <li><a href="#skills" className="text-black hover:text-gray-400 block py-2 md:py-0">Skills</a></li>
             <li><a href="#projects" className="text-black hover:text-gray-400 block py-2 md:py-0">Projects</a></li>
