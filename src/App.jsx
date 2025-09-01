@@ -43,7 +43,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/home"
           element={
             <>
               <Hero />
