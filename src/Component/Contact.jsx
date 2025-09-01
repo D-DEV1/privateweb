@@ -27,7 +27,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900">Email</p>
+                    <p className="font-medium text-gray-900">Gmail</p>
                     <p className="text-gray-600">Bolumayowa4@gmail.com</p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Email
+                      Gmail
                     </label>
                     <input
                       type="email"
@@ -88,7 +88,7 @@ const Contact = () => {
                       id="email"
                       required
                       className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:outline-none"
-                      placeholder="you@email.com"
+                      placeholder="you@gmail.com"
                     
                     />
                   </div>
